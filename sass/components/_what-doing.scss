@@ -1,0 +1,44 @@
+.what-doing {
+  display: none;
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+
+    padding-bottom: $section-indent;
+    background-color: $primary-white;
+    &__title {
+      @include font(700, 14px, 1.142, 0.03em);
+    }
+    &__subtitle {
+      margin-bottom: 50px;
+
+      @include font(700, 36px, 1.166, 0.03em);
+
+      text-align: center;
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &__direction {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transform: translate(0%, 0%);
+
+      @include size(370px, 70px);
+
+      padding-top: 27px;
+      padding-bottom: 27px;
+
+      text-align: center;
+
+      @include color($bgc-what-doing-title, $primary-white);
+    }
+  }
+}

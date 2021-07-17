@@ -1,0 +1,38 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fw: 400, $fs: 14px, $lh: 1.174, $ls: 0.03em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin position($pos, $t, $l) {
+  position: $pos;
+  top: $t;
+  left: $l;
+}
+
+@mixin border($b: transparent, $br: 4px) {
+  border: 1px solid $b;
+  border-radius: $br;
+}
+
+@mixin color($bgc, $c) {
+  background-color: $bgc;
+  color: $c;
+}
+
+@mixin fill($bgc, $f) {
+  background-color: $bgc;
+  fill: $f;
+}
+
+@mixin background-picture($bgs: contain, $bgp: center, $bgr: no-repeat) {
+  background-size: $bgs;
+  background-position: $bgp;
+  background-repeat: $bgr;
+}

@@ -1,0 +1,154 @@
+// .hero {
+//   &__button {
+//     display: block;
+//     margin: auto;
+
+//     @extend %button;
+
+//     @extend %transition-bgc;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $active-accent;
+//     }
+//   }
+// }
+
+.button {
+  &__open-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 12px 8px;
+    border: none;
+    background-color: $primary-white;
+
+    @extend %transition-bgc;
+
+    &:hover,
+    &:focus {
+      fill: $active-accent;
+    }
+    @media screen and(min-width:768px) {
+      display: none;
+    }
+  }
+}
+
+.button {
+  &__close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 11px 10px;
+    border: none;
+    background-color: $primary-white;
+    @extend %transition-bgc;
+
+    &:hover,
+    &:focus {
+      fill: $active-accent;
+    }
+    @media screen and(min-width:768px) {
+      display: none;
+    }
+  }
+}
+
+// !
+.hero {
+  &__button {
+    @extend %button;
+
+    @extend %transition-bgc;
+
+    &:hover,
+    &:focus {
+      background-color: $active-accent;
+    }
+  }
+}
+// !
+
+.portfolio {
+  &__button {
+    padding: 6px 22px;
+
+    @include font(500, 16px, 1.625, 0.03em);
+
+    @include color($bgc-team-portfolio-btn, getColor-text("primary"));
+
+    @include border();
+  }
+}
+
+.button {
+  &--selected {
+    @include color($accent-color, $primary-white);
+  }
+}
+
+.modal {
+  &__button-close {
+    display: block;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include size(30px, 30px);
+
+    @include fill($primary-white, $black-color);
+
+    @include border($color-circle-icon-close, 50%);
+  }
+}
+
+.subscribe-form {
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    padding: 10px 28px 10px 29px;
+
+    @extend %button;
+
+    @extend %transition-bgc;
+    @media screen and(min-width:768px) {
+      // display: inline-block;
+      // text-align: center;
+      // margin: 0 auto;
+
+      margin: 0 auto;
+      display: flex;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-left: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $active-accent;
+    }
+  }
+}
+
+.data-form {
+  &__button {
+    display: block;
+    // padding: 10px 55px 10px 56px;
+    margin: auto;
+
+    @extend %button;
+
+    @extend %shadow;
+
+    @extend %transition-bgc-br;
+
+    &:hover,
+    &:focus {
+      @include border($active-accent);
+    }
+  }
+}

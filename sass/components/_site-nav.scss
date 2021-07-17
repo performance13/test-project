@@ -1,0 +1,136 @@
+// .site-nav {
+//   &__list {
+//     display: flex;
+//     margin-left: 93px;
+
+//     @include font(500, 14px, 1.142, 0.02em);
+//   }
+// }
+
+// .site-nav {
+//   &__list {
+//     .site-nav {
+//       &__item + .site-nav {
+//         &__item {
+//           margin-left: 50px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .site-nav {
+//   &__item {
+//     @extend %transition-color;
+//   }
+// }
+
+// .site-nav {
+//   &__link {
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+// }
+
+// .site-nav {
+//   &__link {
+//     display: block;
+
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: getColor-text("primary");
+//     &--active-page {
+//       color: $accent-color;
+//       position: relative;
+//       &::after {
+//         @extend %line-bottom;
+//       }
+//     }
+//   }
+// }
+
+// !
+
+.site-nav {
+  &__list {
+    display: none;
+    @media screen and(min-width:768px) {
+      // position: absolute;
+      // top: 6px;
+      // left: 147px;
+      display: flex;
+      margin-left: 88px;
+
+      @include font(500, 14px, 1.142, 0.02em);
+    }
+
+    @media screen and(min-width:1200px) {
+      // position: absolute;
+      // top: 2px;
+      // left: 453px;
+      margin-left: 93px;
+    }
+  }
+}
+
+.site-nav {
+  &__list {
+    .site-nav {
+      &__item + .site-nav {
+        &__item {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+.site-nav {
+  &__item {
+    @extend %transition-color;
+  }
+}
+
+.site-nav {
+  &__link {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.site-nav {
+  &__link {
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: getColor-text("primary");
+    &--active-page {
+      color: $accent-color;
+      position: relative;
+    }
+  }
+}
+
+.site-nav {
+  &__link {
+    &--active-page {
+      @media screen and(min-width: 768px) {
+      }
+      &::after {
+        @extend %line-bottom-pseudo-tablet;
+      }
+      @media screen and(min-width: 1200px) {
+      }
+      &::after {
+        @extend %line-bottom-pseudo-desc;
+      }
+    }
+  }
+}

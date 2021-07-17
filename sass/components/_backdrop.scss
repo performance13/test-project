@@ -1,0 +1,8 @@
+.backdrop {
+  @include size(100%, 100%);
+
+  background-color: $bgc-backdrop;
+  &--position {
+    @include position(fixed, 0, 0);
+  }
+}

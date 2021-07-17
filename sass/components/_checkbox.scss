@@ -1,0 +1,79 @@
+.data-form {
+  &__agree-newsletter {
+    display: block;
+    margin-bottom: 30px;
+
+    @include font(400, 12px, 1.174, 0.03em);
+
+    font-style: normal;
+    text-align: center;
+    color: getColor-text("secondary");
+    // &__text {
+    //   display: inline;
+    //   // @media screen and(min-width:1200px) {
+    //   //   @include font(400, 14px, 1.714, 0.03em);
+    //   // }
+    // }
+  }
+}
+
+.agree-newsletter {
+  &__text {
+    display: inline;
+    @media screen and(min-width:1200px) {
+      @include font(400, 14px, 1.714, 0.03em);
+    }
+  }
+}
+
+.agreement {
+  &__link {
+    font-style: normal;
+
+    @include font(400, 12px, 1.174, 0.03em);
+
+    text-decoration: underline;
+    color: $accent-color;
+    @media screen and(min-width:1200px) {
+      @include font(400, 14px, 1.714, 0.03em);
+    }
+  }
+}
+
+.data-form {
+  &__checkbox {
+    appearance: none;
+    position: absolute;
+  }
+}
+
+.checkbox {
+  &__icon {
+    display: inline-block;
+
+    border: 2px solid getColor-text("primary");
+    border-radius: 2px;
+
+    vertical-align: sub;
+    &--check-mark {
+      display: block;
+
+      @include size(16px, 15px);
+    }
+  }
+}
+
+.data-form {
+  &__checkbox:checked {
+    + .checkbox {
+      &__icon {
+        margin-left: auto;
+        margin-right: auto;
+
+        background-size: contain;
+        background-color: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+  }
+}

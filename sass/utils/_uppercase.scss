@@ -1,0 +1,29 @@
+.hero {
+  &__title {
+    @extend %uppercase;
+  }
+}
+
+.features {
+  &__subtitle {
+    @extend %uppercase;
+  }
+}
+
+.what-doing {
+  &__title {
+    @extend %uppercase;
+  }
+}
+
+.join {
+  &__subtitle {
+    @extend %uppercase;
+  }
+}
+
+.subscribe-form {
+  &__subtitle {
+    @extend %uppercase;
+  }
+}
