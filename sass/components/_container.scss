@@ -4,8 +4,8 @@
 
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   margin: 0 auto;
 
@@ -23,5 +23,9 @@
 
   @media screen and(min-width: 1200px) {
     max-width: 1200px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    max-width: 1280px;
   }
 }
