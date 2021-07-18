@@ -1811,6 +1811,8 @@ body {
 
 .customer-reviews__feedback {
   margin-bottom: 30px;
+  background-color: #fafafa;
+  background-color: brown;
 }
 
 @media screen and (min-width: 768px) {
