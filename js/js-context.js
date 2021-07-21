@@ -1,7 +1,5 @@
 let checkIt = true;
-//если chekIt оставить внутри 
-//функции, то будет if всегда 
-//выполняться
+
 
 let btn = document.getElementById("btn");
 btn.addEventListener("click", readMore);
